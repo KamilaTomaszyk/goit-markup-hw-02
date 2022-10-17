@@ -11,8 +11,8 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: Var(--black-main);
-  background-color: Var(--main-white);
+  color: var(--black-main);
+  background-color: var(--main-white);
 }
 .hidden-header {
   position: absolute;
@@ -31,12 +31,6 @@ ul {
   border-radius: 0px;
 }
 .logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -53,15 +47,19 @@ ul {
   color: Var(--second-black);
 }
 .main-navigation {
-  position: absolute;
-  width: 254px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 0;
+}
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+}
+.main-navigation li {
+  display: inline;
+  margin-inline: 10px;
 }
 .link-nav {
   text-decoration-line: none;
@@ -94,20 +92,9 @@ ul {
   color: var(--main-blue);
 }
 .main-box {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
   background-color: var(--background-grey);
 }
 h1 {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -119,11 +106,6 @@ h1 {
 }
 .main-button {
   background-color: var(--main-blue);
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 440px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -143,35 +125,13 @@ h1 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  position: absolute;
+}
 
-  height: 16px;
-  top: 774px;
-}
-.feature-list {
-  position: relative;
-  width: 1170px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
-}
 .feature-description {
-  position: relative;
-  width: 270px;
-  height: 75px;
-  left: 215px;
-  top: 800px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-silver);
-}
-.servis-section {
-  position: absolute;
-  width: 1170px;
-  height: 386px;
-  left: 215px;
-  top: 969px;
 }
 h2 {
   font-weight: 700;
@@ -181,19 +141,9 @@ h2 {
   letter-spacing: 0.03em;
 }
 .team-section {
-  position: absolute;
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
   background-color: var(--light-pink);
 }
 .team-card {
-  position: relative;
-  width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 1635px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -213,11 +163,6 @@ h2 {
   color: var(--main-silver);
 }
 .contact-info {
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
   background: var(--background-grey);
 }
 .logo-footer {
@@ -230,7 +175,7 @@ h2 {
   text-decoration-line: none;
 }
 .first-word-footer {
-  color: Var(--main-blue);
+  color: var(--main-blue);
 }
 .second-word-footer {
   color: var(--main-white);
@@ -256,12 +201,8 @@ h2 {
 .footer-contact:hover {
   color: var(--main-blue);
 }
-.filtr {
-  position: absolute;
-  width: 572px;
-  height: 54px;
-  left: 510px;
-  top: 174px;
+.filtr li {
+  display: inline;
 }
 .filtr button {
   font-weight: 500;
